@@ -57,12 +57,29 @@
             margin:0 auto;
         }
        
+        /* HEADER STYLE */
+        .header{
+            height:150px;
+            border-bottom:2px solid #d91226;
+            padding:19px 0 0 0;
+        }
+        .title{width:287px;background:red;}
+        .q-nav01{width:404px;background:green;}
+        .q-nav02{width:505px;background:blue;}
+        .main-nav{width:1196px;background:cyan;}
     </style>
 </head>
 <body>
     <section class="wrap">
         <header class="header">
-            <div class="container">HEADER</div>
+            <div class="container clearfix">                
+                <div class="clearfix fleft">
+                    <h1 class="title fright">제목</h1>
+                    <nav class="q-nav01 fleft">퀵내비1</nav>
+                </div>
+                <nav class="q-nav02 fleft">퀵내비2</nav>
+                <nav class="main-nav fleft">메인내비</nav>
+            </div>
         </header>
         <section class="sec sec01 main-banner">
             <div class="container">SEC01</div>
