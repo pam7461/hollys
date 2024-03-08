@@ -61,7 +61,7 @@
         .header{
             height:150px;
             border-bottom:2px solid #d91226;
-            padding:19px 0 0 0;
+            padding:14px 0 0 0;
         }
         .title{width:287px;}
         .title a{
@@ -89,7 +89,15 @@
             background-image:url(./images/ico02.svg);
             color:inherit;
         }
-        .q-nav02{width:505px;background:blue;}
+        .q-nav02 li{
+            margin-left:17px;
+            font-weight:700;
+            font-size:13px;
+            color:#666;
+        }
+        .q-nav02 li:last-child{
+            padding-top:3px;
+        }
         .main-nav{width:1196px;background:cyan;}
     </style>
 </head>
@@ -106,7 +114,14 @@
                         </ul>
                     </nav>
                 </div>
-                <nav class="q-nav02 fleft">퀵내비2</nav>
+                <nav class="q-nav02 fright">
+                    <ul class="clearfix">
+                        <li class="fleft"><a href="#">멤버십 로그인</a></li>
+                        <li class="fleft"><a href="#">멤버십 가입</a></li>
+                        <li class="fleft"><a href="#">고객센터</a></li>
+                        <li class="fleft"><a href="#">English</a></li>
+                    </ul>
+                </nav>
                 <nav class="main-nav fleft">메인내비</nav>
             </div>
         </header>
