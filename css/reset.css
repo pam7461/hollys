@@ -1,0 +1,36 @@
+html,head,body,h1,h2,h3,h4,h5,h6,p,img,a,ul,ol,li,
+form,input,label,select,textarea,div,span,fieldset,
+legend,picture,video,audio,option,optgroup,button,
+strong,em,header,section,footer,aside,article,main,
+hr,br,address,table,thead,tbody,tfoot,tr,th,td{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6,strong{
+    font-weight:inherit;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:inherit;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+em,address{
+    font-style:normal;
+}
+img,picture,video{
+    width:100%;
+    vertical-align:bottom;
+}
+
+
+/* SET */
+.clearfix::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.fleft{float:left;}
+.fright{float:right;}
