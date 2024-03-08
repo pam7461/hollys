@@ -73,7 +73,22 @@
             background-size:contain;
             text-indent:-99999px;
         }
-        .q-nav01{width:404px;background:green;}
+        .q-nav01{width:404px;}
+        .q-nav01 li{
+            margin-right:44px;
+        }
+        .q-nav01 a{
+            padding-left:20px;
+            background:url(./images/ico01.svg) no-repeat left center;
+            background-size:17px;
+            font-weight:700;
+            font-size:15px;
+            color:#d91226;
+        }
+        .q-nav01 li:nth-child(2) a{
+            background-image:url(./images/ico02.svg);
+            color:inherit;
+        }
         .q-nav02{width:505px;background:blue;}
         .main-nav{width:1196px;background:cyan;}
     </style>
@@ -84,7 +99,12 @@
             <div class="container clearfix">                
                 <div class="clearfix fleft">
                     <h1 class="title fright"><a href="./index.html">hollys</a></h1>
-                    <nav class="q-nav01 fleft">퀵내비1</nav>
+                    <nav class="q-nav01 fleft">
+                        <ul class="clearfix">
+                            <li class="fleft"><a href="#">창업설명회</a></li>
+                            <li class="fleft"><a href="#">기업특판</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <nav class="q-nav02 fleft">퀵내비2</nav>
                 <nav class="main-nav fleft">메인내비</nav>
