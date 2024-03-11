@@ -169,8 +169,23 @@
         .slide.active{
             z-index:100;
         }
-        
-
+        .slider ul{
+            position:absolute;
+            left:550px;
+            bottom:24px;
+            z-index:100;
+        }
+        .slider li{
+            width:12px;
+            height:12px;
+            margin-right:12px;
+            border-radius:6px;
+            background:#999;
+            text-indent:-999999px;
+        }
+        .slider li.active{
+            background:#d91226;
+        }
     </style>
 </head>
 <body>
@@ -265,6 +280,12 @@
                     <div class="slide slide02"><a href="#"><img src="./images/main-banner02.jpg" alt="슬라이드2"></a></div>
                     <div class="slide slide03"><a href="#"><img src="./images/main-banner03.jpg" alt="슬라이드3"></a></div>
                     <div class="slide slide04"><a href="#"><img src="./images/main-banner04.jpg" alt="슬라이드4"></a></div>
+                    <ul class="clearfix">
+                        <li class="fleft active">1</li>
+                        <li class="fleft">2</li>
+                        <li class="fleft">3</li>
+                        <li class="fleft">4</li>
+                    </ul>
                 </div>
             </div>
         </section>
