@@ -310,6 +310,46 @@
             line-height:21px;
             color:#fff;
         }
+
+
+
+        /* NOTICE Styel */
+        .notice-item{
+            width:287px;
+            margin-right:16px;
+        }
+        .icons{
+            width:auto;
+            margin-right:0;
+        }
+        .notice-item h2{            
+            margin-bottom:4px;
+            font-weight:800;
+            font-size:20px;
+            color:#222;            
+        }
+        .notice-item h2::before{
+            content:'';
+            display:inline-block;
+            width:20px;
+            height:20px;
+            margin-right:11px;
+            background:url(./images/ico-event.svg) no-repeat center;
+            background-size:contain;
+        }
+        .b2b h2::before{
+            background-image:url(./images/ico-b2b.svg);
+        }
+        .news h2::before{
+            background-image:url(./images/ico-news.svg);
+        }
+        .news span.fleft{
+            display:block;
+            width:198px;
+            overflow:hidden;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+        }
     </style>
 </head>
 <body>
@@ -457,10 +497,44 @@
         <section class="sec sec04 notice">
             <div class="container">
                 <ul class="clearfix">
-                    <li class="fleft">event</li>
-                    <li class="fleft">b2b</li>
-                    <li class="fleft">news</li>
-                    <li class="fright">icon</li>
+                    <li class="notice-item fleft event">
+                        <h2>Event</h2>
+                        <p class="clearfix">
+                            <span class="fleft"><a href="#">초코와 사랑에 빠진 할리베이는 행복해</a></span>
+                            <span class="fright"><a href="#">01-31</a></span>
+                        </p>
+                        <p class="clearfix">
+                            <span class="fleft"><a href="#">[멤버십 혜택] 할리스 멤버십 가입 고객에 대한 혜택</a></span>
+                            <span class="fright"><a href="#">01-30</a></span>
+                        </p>
+                        <p class="clearfix">
+                            <span class="fleft"><a href="#">치즈폭탄, 자이언트, 쫄깃담백한 치즈볼</a></span>
+                            <span class="fright"><a href="#">01-25</a></span>
+                        </p>
+                    </li>
+                    <li class="notice-item fleft b2b">
+                        <h2>Hollys B2B Solution</h2>
+                        <p><a href="#">할리스 F&B는 20년의 커피 노하우를 기반으로 한 할리스 B2B 솔루션을 소개합니다.</a></p>
+                    </li>
+                    <li class="notice-item fleft news">
+                        <h2>News</h2>
+                        <p class="clearfix">
+                            <span class="fleft"><a href="#">[공고] 제3자 배정 유상증자에 따른 입금안내</a></span>
+                            <span class="fright"><a href="#">05-03</a></span>
+                        </p>
+                        <p class="clearfix">
+                            <span class="fleft"><a href="#">개인정보처리방침 변경 안내</a></span>
+                            <span class="fright"><a href="#">10-14</a></span>
+                        </p>
+                        <p class="clearfix">
+                            <span class="fleft"><a href="#">중간배당 기준일 공고</a></span>
+                            <span class="fright"><a href="#">10-5</a></span>
+                        </p>
+                    </li>
+                    <li class="notice-item fright icons clearfix">
+                        <div class="imb-box fleft"><a href="#"><img src="./images/ico-notice01.png" alt="창업안내"></a></div>
+                        <div class="imb-box fleft"><a href="#"><img src="./images/ico-notice02.png" alt="고객문의"></a></div>
+                    </li>
                 </ul>
             </div>
         </section>
