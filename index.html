@@ -217,6 +217,45 @@
             background-image:url(./images/ico04.svg);
             color:#d91226;
         }
+        .mall .img-box{
+            width:33.3333%;              
+            padding-top:80px; 
+            position:relative;       
+        }
+        .mall .img-box::after{
+            content:'돌체라떼';
+            display:block;
+            font-weight:600;
+            font-size:14px;
+            color:#222;
+            text-align:center;
+        }
+        .mall .img-box:nth-child(2)::after{
+            content:'할리베어 초코홀릭\A케이크';
+            white-space:pre;
+        }
+        .mall .img-box:nth-child(3)::after{
+            content:'로얄 밀크티 라떼';
+        }
+        .mall .img-box::before{
+            content:'';
+            display:block;
+
+            position:absolute;
+            right:0;
+            top:70px;
+
+            width:1px;
+            height:140px;
+            border-right:1px dotted #000;
+        }
+        .mall .img-box:nth-child(3)::before{
+            display:none;
+        }
+        .mall .img-box img{
+            width:130px;
+            margin-left:33px;
+        }
         .store h2{
             background-image:url(./images/ico05.svg);
         }
@@ -333,9 +372,11 @@
                 <div class="con-nav-item mall fleft">
                     <h2>Hollys Mall</h2>
                     <p>할리스의 다양한 상품들을 온라인에서도 만나보세요.</p>
-                    <div class="img-box"><a href="#"><img src="./images/img-con-mall01.png" alt="할리스몰1"></a></div>
-                    <div class="img-box"><a href="#"><img src="./images/img-con-mall02.png" alt="할리스몰2"></a></div>
-                    <div class="img-box"><a href="#"><img src="./images/img-con-mall03.png" alt="할리스몰3"></a></div>
+                    <div class="clearfix">
+                        <div class="img-box fleft"><a href="#"><img src="./images/img-con-mall01.png" alt="할리스몰1"></a></div>
+                        <div class="img-box fleft"><a href="#"><img src="./images/img-con-mall02.png" alt="할리스몰2"></a></div>
+                        <div class="img-box fleft"><a href="#"><img src="./images/img-con-mall03.png" alt="할리스몰3"></a></div>
+                    </div>
                 </div>
                 <div class="con-nav-item store fleft">
                     <h2>Store</h2>
