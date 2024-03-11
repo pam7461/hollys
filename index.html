@@ -164,10 +164,10 @@
             left:0;
             right:0;
             top:0;
-            z-index:0;
+            display:none;            
         }
-        .slide.active{
-            z-index:100;
+        .slide:nth-child(1){
+            display:block;
         }
         .slider ul{
             position:absolute;
@@ -183,7 +183,7 @@
             background:#999;
             text-indent:-999999px;
         }
-        .slider li.active{
+        .slider li:nth-child(1){
             background:#d91226;
         }
     </style>
@@ -276,15 +276,15 @@
         <section class="sec sec01 main-banner">
             <div class="container">
                 <div class="slider">
-                    <div class="slide slide01 active"><a href="#"><img src="./images/main-banner01.jpg" alt="슬라이드1"></a></div>
+                    <div class="slide slide01"><a href="#"><img src="./images/main-banner01.jpg" alt="슬라이드1"></a></div>
                     <div class="slide slide02"><a href="#"><img src="./images/main-banner02.jpg" alt="슬라이드2"></a></div>
                     <div class="slide slide03"><a href="#"><img src="./images/main-banner03.jpg" alt="슬라이드3"></a></div>
                     <div class="slide slide04"><a href="#"><img src="./images/main-banner04.jpg" alt="슬라이드4"></a></div>
                     <ul class="clearfix">
-                        <li class="fleft active">1</li>
-                        <li class="fleft">2</li>
-                        <li class="fleft">3</li>
-                        <li class="fleft">4</li>
+                        <li id="tri01" class="fleft tri">1</li>
+                        <li id="tri02" class="fleft tri">2</li>
+                        <li id="tri03" class="fleft tri">3</li>
+                        <li id="tri04" class="fleft tri">4</li>
                     </ul>
                 </div>
             </div>
@@ -312,7 +312,45 @@
     <script src="./js/jquery.js"></script>
     <script>
         // 내부스크립트
-        
+        // 트리거1번을 클릭하면 모든 슬라이드는 안보이고 
+        // 1번 슬라이드만 보이게 한다 
+        // 그리고 모든 트리거 #999
+        // 선택된 트리거는 메인색상으로 변경된다
+        $('#tri01').click(()=>{
+            $('.slide').fadeOut();
+            $('.slide01').fadeIn();
+            $('.tri').css('background','#999');
+            $('#tri01').css('background','#d91226');
+        });
+
+
+        // 트리거2번을 클릭하면 모든 슬라이드는 안보이고 
+        // 2번 슬라이드만 보이게 한다
+        $('#tri02').click(()=>{
+            $('.slide').fadeOut();
+            $('.slide02').fadeIn();
+            $('.tri').css('background','#999');
+            $('#tri02').css('background','#d91226');
+        });
+
+
+        // 트리거3번을 클릭하면 모든 슬라이드는 안보이고 
+        // 3번 슬라이드만 보이게 한다
+        $('#tri03').click(()=>{
+            $('.slide').fadeOut();
+            $('.slide03').fadeIn();
+            $('.tri').css('background','#999');
+            $('#tri03').css('background','#d91226');
+        });
+
+        // 트리거4번을 클릭하면 모든 슬라이드는 안보이고 
+        // 4번 슬라이드만 보이게 한다
+        $('#tri04').click(()=>{
+            $('.slide').fadeOut();
+            $('.slide04').fadeIn();
+            $('.tri').css('background','#999');
+            $('#tri04').css('background','#d91226');
+        });
     </script>
 </body>
 </html>
