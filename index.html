@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/bxslider.css">
 
     <title>할리스</title>
     <style>
@@ -62,6 +61,22 @@
             height:150px;
             border-bottom:2px solid #d91226;
             padding:14px 0 0 0;
+            position:relative;
+        }
+        .header .container{
+            position:relative;
+            z-index:100;
+        }
+        .header::after{
+            content:'';
+            display:none;
+            position:absolute;
+            z-index:50;
+            left:0;
+            right:0;
+            top:148px;
+            height:200px;
+            background:#777;
         }
         .title{
             width:287px;
@@ -111,13 +126,51 @@
             text-align:center;
             line-height:70px;
             font-weight:900;
-            font-size:20px;            
+            font-size:20px; 
+            position:relative;           
         }
         .main-nav>ul>li:hover{
             background:#d91226;
             color:#fff;
         }
-        .sub-nav{display:none;}
+        .sub-nav{
+            display:none;
+            position:absolute;
+            left:0;
+            right:0;
+            top:70px;
+            padding-top:20px; 
+            color:#aaa;
+            line-height:1;
+            font-weight:700;
+            font-size:15px;           
+        }
+        .main-nav>ul>li:hover .sub-nav{
+            display:block;
+        }
+        .sub-nav li{
+            margin-bottom:9px;
+        }
+        .sub-nav li:hover{
+            color:#d91226;
+        }
+        
+        .slider{
+            position:relative;
+            height:299px;
+        }
+        .slide{
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            z-index:0;
+        }
+        .slide.active{
+            z-index:100;
+        }
+        
+
     </style>
 </head>
 <body>
@@ -203,9 +256,17 @@
                     </ul>
                 </nav>
             </div>
+            <!-- 에프터 -->
         </header>
         <section class="sec sec01 main-banner">
-            <div class="container">SEC01</div>
+            <div class="container">
+                <div class="slider">
+                    <div class="slide slide01 active"><a href="#"><img src="./images/main-banner01.jpg" alt="슬라이드1"></a></div>
+                    <div class="slide slide02"><a href="#"><img src="./images/main-banner02.jpg" alt="슬라이드2"></a></div>
+                    <div class="slide slide03"><a href="#"><img src="./images/main-banner03.jpg" alt="슬라이드3"></a></div>
+                    <div class="slide slide04"><a href="#"><img src="./images/main-banner04.jpg" alt="슬라이드4"></a></div>
+                </div>
+            </div>
         </section>
         <section class="sec sec02 con-nav">
             <div class="container">SEC02</div>
@@ -220,15 +281,17 @@
             <div class="container">SEC05</div>
         </section>
         <footer class="footer">
-            <div class="container">FOOTER</div>
+            <div class="container">
+                
+            </div>
         </footer>
     </section>
 
     <!-- 스크립트 -->
     <script src="./js/jquery.js"></script>
-    <script src="./js/bxslider.js"></script>
     <script>
         // 내부스크립트
+        
     </script>
 </body>
 </html>
