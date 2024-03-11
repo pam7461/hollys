@@ -182,6 +182,9 @@
 
         
         /* CON NAV Style */
+        .con-nav{
+            margin-bottom:48px;
+        }
         .con-nav-item{
             width:287px;
             margin-right:16px;
@@ -264,6 +267,47 @@
             left:16px;
             top:54px;
             font-size:14px;
+        }
+
+
+
+        /* SUB BANNER Style */
+        .sub-banner{
+            margin-bottom:48px;
+        }
+        .banner{
+            width:590px;
+            background:red;
+            position:relative;
+        }
+        .contents-box{
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+
+            padding:20px 16px;
+            color:white;
+        }
+        .contents-box h2{
+            margin-bottom:2px;
+            font-weight:600;
+            font-size:14px;
+            color:#d91226;
+        }
+        .contents-box h3{
+            margin-bottom:6px;
+            font-weight:600;
+            font-size:28px;
+            color:#fefefe;
+        }
+        .contents-box p{
+            margin-bottom:0px;
+            font-weight:600;
+            font-size:14px;
+            line-height:21px;
+            color:#fff;
         }
     </style>
 </head>
@@ -386,7 +430,28 @@
             </div>
         </section>
         <section class="sec sec03 sub-banner">
-            <div class="container">SEC03</div>
+            <div class="container clearfix">
+                <div class="banner banner01 fleft">
+                    <div class="contents-box">
+                        <h2>Membership</h2>
+                        <h3>할리스 멤버십</h3>
+                        <p>할리스 멤버십 ‘CROWN”으로<br>다양한 혜택을 즐겨보세요.</p>
+                    </div>
+                    <div class="img-box">
+                        <a href="#"><img src="./images/sub-banner01.jpg" alt="멤버십베너"></a>
+                    </div>
+                </div>
+                <div class="banner banner02 fright">
+                    <div class="contents-box">
+                        <h2>Gift Card</h2>
+                        <h3>할리스카드</h3>
+                        <p>할리스카드로 쉽고 간편하게<br>소중한 사람들에게 마음을 전하세요.</p>
+                    </div>
+                    <div class="img-box">
+                        <a href="#"><img src="./images/sub-banner02.jpg" alt="멤버십카드"></a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="sec sec04 notice">
             <div class="container">SEC04</div>
