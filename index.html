@@ -314,6 +314,13 @@
 
 
         /* NOTICE Styel */
+        .notice{
+            margin-bottom:80px;
+        }
+        .notice .container{
+            border-bottom:2px solid #d91226;
+            padding-bottom:80px;
+        }
         .notice-item{
             width:287px;
             margin-right:16px;
@@ -343,12 +350,80 @@
         .news h2::before{
             background-image:url(./images/ico-news.svg);
         }
-        .news span.fleft{
+        .notice-item p{
+            width:250px;
+        }
+        .notice-item span.fleft{
             display:block;
             width:198px;
             overflow:hidden;
             white-space:nowrap;
             text-overflow:ellipsis;
+        }
+        .icons{
+            padding-top:20px;
+            position:relative;
+        }
+        .icons::before{
+            content:'';
+            display:block;
+            width:1px;
+            height:70px;
+            background:#666;
+            position:absolute;
+            left:111px;
+        }
+        .icons .img-box{
+            width:85px;
+            margin-left:16px;
+        }
+        .icons img{
+            width:45px;
+            margin-left:21px;
+        }
+        .icons .img-box::after{
+            content:'창업안내';
+            display:block;
+            font-size:14px;
+            color:#222;
+            text-align:center;
+        }
+        .icons .img-box:nth-child(2)::after{
+            content:'고객문의';
+        }
+
+
+        /* SNS Style */
+        .sns{
+            margin-bottom:190px;
+        }
+        .sns>.container>h2,.sns>.container>div{
+            display:inline-block;
+            margin-right:10px;
+            font-weight:800;
+            font-size:28px;
+            color:#222;
+        }
+
+
+        /* FOOTER Style */
+        .footer{
+            padding:24px 0;
+            background:#d91226;
+            color:#fff;
+        }
+        .footer ul{
+            margin-bottom:10px;
+            font-size:13px;
+        }
+        .footer li{
+            margin-right:2em;
+        }
+        .footer strong{
+            font-weight:900;
+        }
+        .footer address{
+            font-size:13px;
         }
     </style>
 </head>
@@ -532,18 +607,36 @@
                         </p>
                     </li>
                     <li class="notice-item fright icons clearfix">
-                        <div class="imb-box fleft"><a href="#"><img src="./images/ico-notice01.png" alt="창업안내"></a></div>
-                        <div class="imb-box fleft"><a href="#"><img src="./images/ico-notice02.png" alt="고객문의"></a></div>
+                        <div class="img-box fleft"><a href="#"><img src="./images/ico-notice01.png" alt="창업안내"></a></div>
+                        <div class="img-box fleft"><a href="#"><img src="./images/ico-notice02.png" alt="고객문의"></a></div>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="sec sec05 sns">
-            <div class="container">SEC05</div>
+            <div class="container">
+                <h2>HOLLYS Live</h2>
+                <div class="img-box"><a href="#"><img src="./images/ico-sns01.png" alt="facebook"></a></div>
+                <div class="img-box"><a href="#"><img src="./images/ico-sns02.png" alt="instagram"></a></div>
+            </div>
         </section>
         <footer class="footer">
             <div class="container">
-                
+                <ul class="clearfix">
+                    <li class="fleft"><a href="#"><strong>택스트</strong></a></li>
+                    <li class="fleft"><a href="#">택스트</a></li>
+                    <li class="fleft"><a href="#">택스트</a></li>
+                    <li class="fleft"><a href="#">택스트</a></li>
+                    <li class="fleft"><a href="#">택스트</a></li>
+                    <li class="fleft"><a href="#">택스트</a></li>
+                    <li class="fleft"><a href="#">택스트</a></li>
+                    <li class="fleft"><a href="#">택스트</a></li>
+                </ul>
+                <address>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis itaque earum sint repellendus illum. <br>
+                    amet consectetur adipisicing elit. Nihil perferendis itaque earum sint repellendus illum. <br>
+                    dolor sit amet consectetur adipisicing elit. Nihil perferendis itaque earum sint repellendus illum.
+                </address>
             </div>
         </footer>
     </section>
