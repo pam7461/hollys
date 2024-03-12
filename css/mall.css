@@ -1,0 +1,13 @@
+.con-nav li{
+    width:186px;
+}
+.con-nav li:nth-child(8n){
+    margin-right:16px;
+}
+.con-nav li:nth-child(4n){
+    margin-right:0;
+}
+.con-nav p span{
+    font-size:12px;
+    color:#d91226;
+}
