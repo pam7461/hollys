@@ -24,6 +24,9 @@ img,picture,video{
     width:100%;
     vertical-align:bottom;
 }
+ul,ol,li{
+    list-style:none;
+}
 
 
 /* SET */
