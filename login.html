@@ -8,94 +8,164 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/sub.css">  
     <title>할리스</title>    
-    <style>               
-        
+    <style>         
+        .welcome{
+            font-weight:900;
+            font-size:100px;
+            color:#d91226;
+            text-transform:uppercase;
+        }
+
+        .welcome+p{
+            font-weight:500;
+            font-size:1.1em;
+        }
+        figure:first-of-type{
+            width:500px;
+            padding-top:50px;
+        }
+        figure:last-of-type{
+            margin-bottom:50px;
+            border-bottom:1px solid #aaa;
+            padding-bottom:10px;
+        }
+        .input{
+            width:400px;
+        }
+        .input input{
+            width:250px;
+        }
+        input[type="submit"]{
+            width:90px;
+            height:60px;
+        }
+        .머리{
+            border-bottom:2px solid #d91226;
+            padding-top:1em;
+            position:relative;
+        }
+        .묶음{
+            width:960px;
+            margin:0 auto;
+        }
+        .상표{
+            position:absolute;
+            left:50%;
+            top:6px;
+            transform:translate(-50%,0);
+            font-weight:700;
+            font-size:42px;
+            color:#d91226;
+        }
+        .빠른내비{
+            margin-bottom:40px;
+            font-weight:500;
+            font-size:13px;
+            color:#333;
+        }
+        .빠른내비 ul.fleft li{
+            margin-right:2em;
+        }
+        .빠른내비 ul.fleft li:first-child{
+            color:#d91226;
+        }
+        .빠른내비 ul.fright li{
+            margin-left:1em;
+        }
+        .주내비>li{
+            width:160px;
+            padding:20px 0;
+            font-weight:700;
+            font-size:24px;
+            color:#222;
+            text-align:center;
+            transition:color 0.2s;
+        }
+        .주내비>li:hover{
+            background:#d91226;
+            color:#fff;
+        }
+
+
+        .보조내비{display:none;}
     </style>
 </head>
 <body>
     <section class="wrap">
-        <header class="header">
-            <div class="container clearfix">                
-                <div class="clearfix fleft">
-                    <h1 class="title fright"><a href="./index.html">hollys</a></h1>
-                    <nav class="q-nav01 fleft">
-                        <ul class="clearfix">
-                            <li class="fleft"><a href="#">창업설명회</a></li>
-                            <li class="fleft"><a href="#">기업특판</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <nav class="q-nav02 fright">
-                    <ul class="clearfix">
-                        <li class="fleft"><a href="./login.html">멤버십 로그인</a></li>
-                        <li class="fleft"><a href="#">멤버십 가입</a></li>
-                        <li class="fleft"><a href="#">고객센터</a></li>
-                        <li class="fleft"><a href="#">English</a></li>
+        <header class="머리">
+            <div class="묶음">
+                <h1 class="상표">할리스</h1>
+                <nav class="clearfix 빠른내비">
+                    <ul class="fleft clearfix">
+                        <li class="fleft">창업설명회</li>
+                        <li class="fleft">기업특판</li>
+                    </ul>
+                    <ul class="fright clearfix">
+                        <li class="fleft">멤버십 로그인</li>
+                        <li class="fleft">멤버십 가입</li>
+                        <li class="fleft">고객센터</li>
+                        <li class="fleft">English</li>                        
                     </ul>
                 </nav>
-                <nav class="main-nav fleft">
-                    <ul class="clearfix">
-                        <!-- 메뉴 -->
-                        <li class="fleft menu">
-                            <a href="./menu.html">Menu</a>
-                            <ul class="sub-nav">
-                                <li><a href="./menu.html">COFFEE</a></li>
-                                <li><a href="#">라떼,초콜릿,티</a></li>
-                                <li><a href="#">스무디,주스</a></li>
-                                <li><a href="#">스파클링</a></li>
-                                <li><a href="#">푸드</a></li>
-                                <li><a href="#">MD상품</a></li>
-                                <li><a href="#">MD식품</a></li>
+                <nav>
+                    <ul class="clearfix 주내비">
+                        <li class="fleft">
+                            Menu
+                            <ul class="보조내비">
+                                <li>커피</li>
+                                <li>음료</li>
+                                <li>디저트</li>
+                                <li>물품</li>
                             </ul>
                         </li>
-                        <!-- 할리스몰 -->
-                        <li class="fleft mall">
-                            <a href="./mall.html">HOLLYS Mall</a>
-                            <ul class="sub-nav">
-                                <li><a href="./mall.html">할리스콘</a></li>
-                                <li><a href="#">할리스카드</a></li>
-                                <li><a href="#">E-Store</a></li>
-                                <li><a href="#">구매내역</a></li>
+                        <li class="fleft">
+                            Menu
+                            <ul class="보조내비">
+                                <li>커피</li>
+                                <li>음료</li>
+                                <li>디저트</li>
+                                <li>물품</li>
                             </ul>
                         </li>
-                        <!-- 할리스 멤버십 -->
-                        <li class="fleft member">
-                            <a href="#">Membership</a>
-                            <ul class="sub-nav">
-                                <li><a href="#">스마트오더</a></li>
-                                <li><a href="#">멤버십 혜택</a></li>
+                        <li class="fleft">
+                            Menu
+                            <ul class="보조내비">
+                                <li>커피</li>
+                                <li>음료</li>
+                                <li>디저트</li>
+                                <li>물품</li>
                             </ul>
                         </li>
-                        <!-- 할리스 뉴스 -->
-                        <li class="fleft news">
-                            <a href="#">HOLLYS News</a>
-                            <ul class="sub-nav">
-                                <li><a href="#">Notice</a></li>
-                                <li><a href="#">Event</a></li>
+                        <li class="fleft">
+                            Menu
+                            <ul class="보조내비">
+                                <li>커피</li>
+                                <li>음료</li>
+                                <li>디저트</li>
+                                <li>물품</li>
                             </ul>
                         </li>
-                        <!-- 스토어 -->
-                        <li class="fleft store">
-                            <a href="#">Store</a>
-                            <ul class="sub-nav">
-                                <li><a href="#">매장검색</a></li>
+                        <li class="fleft">
+                            Menu
+                            <ul class="보조내비">
+                                <li>커피</li>
+                                <li>음료</li>
+                                <li>디저트</li>
+                                <li>물품</li>
                             </ul>
                         </li>
-                        <!-- 할리스 이즈 -->
-                        <li class="fleft is">
-                            <a href="#">HOLLYS is</a>
-                            <ul class="sub-nav">
-                                <li><a href="#">HOLLYS</a></li>
-                                <li><a href="#">할리스 위치 및 연락처</a></li>
-                                <li><a href="#">채용 안내</a></li>
-                                <li><a href="#">가맹문의 및 절차</a></li>
-                                <li><a href="#">B2B 사업 소개</a></li>
+                        <li class="fleft">
+                            Menu
+                            <ul class="보조내비">
+                                <li>커피</li>
+                                <li>음료</li>
+                                <li>디저트</li>
+                                <li>물품</li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <!-- 에프터 -->
         </header>
         <section class="main">
             <div class="container clearfix">
@@ -116,7 +186,48 @@
                         <p class="route">Home > 멤버십 로그인</p>
                         <h2>멤버십 로그인</h2>                        
                     </div>
-                    
+                    <form class="form-login" action="#">
+                        <h3 class="welcome">welcome</h3>
+                        <p>할리스에 오신것을 환영합니다. <br> 고객님께서 설정하신 아이디와 패스워드를 입력해 주세요.</p>
+                        <figure class="clearfix">
+                            <div class="fleft">
+                                <div class="input clearfix">
+                                    <label class="fleft" for="uid">아이디</label>
+                                    <input class="fright" type="text" id="uid">
+                                </div>
+                                <div class="input clearfix">
+                                    <label class="fleft" for="upass">비밀번호</label>
+                                    <input class="fright" type="password" id="upass">
+                                </div>
+                            </div>
+                            <div class="fright">
+                                <input type="submit" value="로그인">
+                            </div>
+                        </figure>
+                        <figure>
+                            <input type="checkbox" id="save-id">
+                            <label for="save-id">아이디 저장</label>
+                        </figure>
+                    </form>
+                    <div class="id-pass-join">
+                        <ul class="clearfix">
+                            <li class="fleft search-id">
+                                <p class="large-t">아이디를 잊어버리셨나요?</p>
+                                <p>고객님의 아이디를 찾아드립니다.</p>
+                                <button>아이디 찾기</button>
+                            </li>
+                            <li class="fleft search-pass">
+                                <p class="large-t">비밀번호를 잊어버리셨나요?</p>
+                                <p>고객님의 비밀번호를 찾아드립니다.</p>
+                                <button>비밀번호 찾기</button>
+                            </li>
+                            <li class="fleft join">
+                                <p class="large-t">할리스의 회원이 아니신가요?</p>
+                                <p>회원가입하시고 다양한 혜택을 누리세요.</p>
+                                <button>회원가입</button>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </section>
