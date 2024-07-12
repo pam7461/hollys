@@ -39,7 +39,57 @@
             height:149px;
             margin:0 auto;
             padding-top:16px;
+            position:relative;
         }
+        .header .logo{
+            position:absolute;
+            left:50%;
+            top:16px;
+            transform:translateX(-50%);            
+        }
+        .header .logo a{
+            display:block;
+            width:76px;
+            height:64px;
+            background:url(./images/logo.png) no-repeat center;
+            background-size:contain;
+            text-indent:-9999px;
+        }
+        .header h2{
+            display:none;
+        }
+        .header .q-nav01{
+            float:left;
+            font-weight:700;
+        }
+        .header .q-nav01 li{
+            float:left;
+            margin-right:35px;
+        }
+        .header .q-nav01 li:nth-child(1) a{
+            display:block;
+            padding-left:22px;
+            background:url(./images/ico-header01.png) no-repeat left center;
+            background-size:16px;
+            color:var(--primary);
+        }
+        .header .q-nav01 li:nth-child(2) a{
+            display:block;
+            padding-left:22px;
+            background:url(./images/ico-header02.png) no-repeat left center;
+            background-size:16px;            
+        }
+        .header .q-nav02{
+            float:right;
+            font-size:12px;
+            color:var(--gray02);
+        }
+        .header .q-nav02 li{
+            float:left;
+            margin-left:20px;
+        }
+
+
     </style>
     </head>
 <body>
@@ -50,14 +100,14 @@
                 <div class="clearfix">
                     <div class="q-nav01">
                         <h2>설명회 바로가기</h2>
-                        <ul>
+                        <ul class="clearfix">
                             <li><a href="#">창업설명회</a></li>
                             <li><a href="#">기업특판</a></li>
                         </ul>
                     </div>
                     <div class="q-nav02">
                         <h2>멤버십 바로가기</h2>
-                        <ul>
+                        <ul class="clearfix">
                             <li><a href="./login.html">멤버십 로그인</a></li>
                             <li><a href="#">멤버십 가입</a></li>
                             <li><a href="#">고객센터</a></li>
@@ -69,7 +119,7 @@
                     <h2>전체 서비스 바로가기</h2>
                     <ul class="main-nav">
                         <li>
-                            <a href="#">
+                            <a href="./menu.html">
                                 <span>MENU</span>
                                 <span>메뉴</span>
                             </a>
@@ -82,7 +132,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="./mall.html">
                                 <span>HOLLYS Mall</span>
                                 <span>할리스 몰</span>
                             </a>
