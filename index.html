@@ -61,6 +61,7 @@
         .header .q-nav01{
             float:left;
             font-weight:700;
+            margin-bottom:53px;
         }
         .header .q-nav01 li{
             float:left;
@@ -88,7 +89,26 @@
             float:left;
             margin-left:20px;
         }
-
+        .header .main-nav>li{
+            float:left;
+            width:156.6666px;
+            height:56px;
+            padding-top:14px;
+            font-weight:700;
+            font-size:18px;
+            text-align:center;
+        }
+        .header .main-nav>li:hover{
+            background:var(--primary);
+            color:var(--gray04);
+        }
+        
+        
+        
+        .header .main-nav span:nth-child(2),
+        .header .main-nav .sub-nav{
+            display:none;
+        }
 
     </style>
     </head>
@@ -117,7 +137,7 @@
                 </div>
                 <nav class="nav">
                     <h2>전체 서비스 바로가기</h2>
-                    <ul class="main-nav">
+                    <ul class="main-nav clearfix">
                         <li>
                             <a href="./menu.html">
                                 <span>MENU</span>
