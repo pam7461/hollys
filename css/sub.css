@@ -1,0 +1,45 @@
+@charset 'utf-8';
+.contents .container{
+    width:940px;
+    margin:0 auto;
+    padding:48px 0 144px;
+}
+.contents .local-nav{
+    float:left;
+    width:190px;
+}
+.contents .content{
+    float:right;
+    width:700px;
+}
+.local-nav ol{
+    margin-bottom:48px;
+}
+.local-nav li{
+    margin-bottom:12px;
+    font-weight:700;
+    font-size:24px;
+}
+.local-nav li:nth-child(1){
+    color:#ba000c;
+}
+.local-nav h2{
+    margin-bottom:4px;
+    font-weight:700;
+    font-size:18px;
+}
+.local-nav p{
+    margin-bottom:36px;
+    font-weight:200;
+    font-size:14px;
+    line-height:21px;
+}
+.local-nav .img-box{
+    border-bottom:1px solid #ba000c;
+    padding-bottom:35px;
+}
+.content .tit{
+    margin-bottom:72px;
+    font-weight:700;
+    font-size:32px;
+}
