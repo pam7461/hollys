@@ -9,10 +9,58 @@
     <!-- 할리스 공통 스타일 -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- sub page 공통 스타일 -->
-     <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/sub.css">
     <title>할리스</title>
     <style>
-        
+        .form{
+            border-bottom:1px solid #ba000c;
+            padding-bottom:24px;
+        }
+        .form h4{
+            margin-bottom:24px;
+            font-weight:700;
+            font-size:64px;
+            color:#ba000c;
+            text-transform:uppercase;
+        }
+        .form p{
+            margin-bottom:36px;
+            font-size:18px;
+            line-height:27px;
+        }
+        .form>div{
+            width:540px;
+        }
+        .form .u-info{
+            float:left;
+            width:380px;
+        }
+        .form .btn-login{
+            float:right;
+            width:140px;
+        }
+        .u-info li{
+            margin-bottom:20px;
+        }
+        .u-info label{
+            float:left;
+            width:80px;
+            padding:6px 0;
+        }
+        .u-info input{
+            float:left;
+            width:300px;            
+            border:1px solid #ba000c;
+            padding:10px;
+        }
+        .btn-login input{
+            width:140px;
+            height:94px;
+            background:#ba000c;
+            border:none;
+            font-size:18px;
+            color:#eee;
+        }
     </style>
     </head>
 <body>
@@ -127,6 +175,27 @@
                 <section class="sec content">
                     <h2 class="location">HOME > 멤버십 로그인</h2>
                     <h3 class="tit">멤버십 로그인</h3>
+                    <form class="form" action="#" method="post">
+                        <h4>welcome</h4>
+                        <p>할리스에 오신 것을 환영합니다.<br>고객님께서 설정하신 아이디와 비밀번호를 입력해 주세요.</p>
+                        <div class="clearfix">
+                            <div class="u-info">
+                                <ul>
+                                    <li class="clearfix">
+                                        <label for="u-id">아이디</label>
+                                        <input type="text" name="u-id" id="u-id">
+                                    </li>
+                                    <li class="clearfix">
+                                        <label for="u-pass">패스워드</label>
+                                        <input type="password" name="u-pass" id="u-u-pass">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-login">
+                                <input type="submit" value="로그인">
+                            </div>
+                        </div>
+                    </form>
                 </section>
             </div>
         </section>        

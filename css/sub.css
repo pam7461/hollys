@@ -38,6 +38,9 @@
     border-bottom:1px solid #ba000c;
     padding-bottom:35px;
 }
+.content .location{
+    margin-bottom:24px;
+}
 .content .tit{
     margin-bottom:72px;
     font-weight:700;
