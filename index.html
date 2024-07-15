@@ -130,7 +130,52 @@
             color:#eee;
             line-height:21px;
         }
-
+        .notice .art{
+            float:left;
+            width:210px;
+            margin-right:30px;
+        }
+        .notice .art:nth-child(4){
+            width:auto;
+            margin-right:0;
+            float:right;
+        }
+        .notice .art h2{
+            margin-bottom:10px;
+            padding-left:20px;
+            background:url(./images/ico-event.png) no-repeat left center;
+            background-size:16px;
+            font-weight:700;
+            font-size:18px;
+        }
+        .notice .art02 h2{
+            padding-left:22px;
+            background-image:url(./images/ico-b2b.png);
+            background-size:18px;
+        }
+        .notice .art03 h2{
+            padding-left:18px;
+            background-image:url(./images/ico-news.png);
+            background-size:14px;
+        }
+        .notice .art04 h2{
+            visibility:hidden;
+        }
+        .notice .art .tit{
+            float:left;
+            width:160px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+        .notice .art .date{
+            float:right;
+        }
+        .notice .art04 li{
+            float:right;
+            margin-left:20px;
+            text-align:center;
+        }
     </style>
     </head>
 <body>
@@ -303,7 +348,59 @@
             </div>
         </section>
         <section class="sec notice">
-            <div class="container"></div>
+            <div class="container clearfix">
+                <article class="art art01">
+                    <h2>Event</h2>
+                    <ul>
+                        <li class="clearfix">
+                            <span class="tit"><a href="#">[멤버십 혜택] 할리스 멤버십 가입고객 할인안내</a></span>
+                            <span class="date">06-27</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="tit"><a href="#">[출시 기념 이벤트] 치즈 가득 조각케잌 출기기념 이벤트</a></span>
+                            <span class="date">06-20</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="tit"><a href="#">여름을 시원하게 해줄 시원한 스무디</a></span>
+                            <span class="date">06-13</span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="art art02">
+                    <h2>Hollys B2B Solution</h2>
+                    <p><a href="#">할리스 F&B는 20년의 커피 노하우르 기반으로 한 할리스 B2B 솔루션을 소개합니다.</a></p>
+                </article>
+                <article class="art art03">
+                    <h2>News</h2>
+                    <ul>
+                        <li class="clearfix">
+                            <span class="tit"><a href="#">[공고] 제3자 배정 유상증자 안내</a></span>
+                            <span class="date">05-03</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="tit"><a href="#">개인정보처리방침 변경 안내</a></span>
+                            <span class="date">10-06</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="tit"><a href="#">중간배당 기준일 공고</a></span>
+                            <span class="date">10-01</span>
+                        </li>
+                    </ul>
+                </article>
+                <article class="art art04">
+                    <h2>창업안내/고객문의</h2>
+                    <ul class="clearfix">                        
+                        <li>
+                            <div class="img-box"><a href="#"><img src="./images/ico-quick02.png" alt="고객문의"></a></div>
+                            <h3><a href="#">고객문의</a></h3>
+                        </li>
+                        <li>
+                            <div class="img-box"><a href="#"><img src="./images/ico-quick01.png" alt="창업안내"></a></div>
+                            <h3><a href="#">창업안내</a></h3>
+                        </li>
+                    </ul>
+                </article>
+            </div>
         </section>
         <section class="sec live">
             <div class="container"></div>
