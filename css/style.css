@@ -116,14 +116,8 @@
     line-height:18px;
     color:var(--gray04);
 }
-.footer .container{
-    width:940px;
-    margin:0 auto;
-}
-.footer .footer-nav li{
-    float:left;
-    margin-right:22px;
-}
-.footer .footer-nav li:first-child{
-    font-weight:bold;
-}
+.footer .container{width:940px;margin:0 auto;}
+.footer .footer-nav{margin-bottom:16px;}
+.footer .footer-nav li{float:left;margin-right:22px;}
+.footer .footer-nav li:first-child{font-weight:bold;}
+.footer .address{opacity:0.6;}
