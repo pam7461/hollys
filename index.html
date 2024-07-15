@@ -52,13 +52,39 @@
             float:left;
             width:220px;
             margin-right:20px;
+            position:relative;
         }
         .contents01 .art02{
             width:460px;            
         }
         .contents01 .art03{
+            float:right;
             margin-right:0;
         }
+        .contents01 .art h2{
+            position: absolute;
+            left: 6px;
+            top: 20px;
+            padding-left: 32px;
+            background: url(./images/ico-fran.png) no-repeat left -2px;
+            background-size: 30px;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .contents01 .art p{
+            position:absolute;
+            left:12px;
+            top:48px;
+            font-weight:500;
+        }
+        .contents01 .art02 h2{
+            background-image:url(./images/ico-mall.png);
+            color:#ba000c;
+        }
+        .contents01 .art02 p{
+            color:#ba000c;
+        }
+
 
 
     </style>
@@ -184,9 +210,20 @@
         </section>
         <section class="sec contents01">
             <div class="container clearfix">
-                <article class="art art01">art1</article>
-                <article class="art art02">art2</article>
-                <article class="art art03">art3</article>
+                <article class="art art01">
+                    <h2>Franchise</h2>
+                    <p>가맹문의</p>
+                    <div class="img-box"><a href="#"><img src="./images/img01.png" alt="프랜차이즈 바로가기"></a></div>
+                </article>
+                <article class="art art02">
+                    <h2>HOLLYS Mall</h2>
+                    <p>할리스의 다양한 상품들을 온라인에서도 만나보세요.</p>
+                </article>
+                <article class="art art03">
+                    <h2>Store</h2>
+                    <p>전국에 있는 할리스 매장을 찾아드립니다.</p>
+                    <div class="img-box"><a href="#"><img src="./images/img02.jpg" alt="스토어 바로가기"></a></div>
+                </article>
             </div>
         </section>
         <section class="sec contents02">
