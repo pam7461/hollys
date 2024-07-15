@@ -1,0 +1,17 @@
+@charset 'utf-8';
+.content .art li{
+    float:left;
+    width:140px;
+    margin:24px 0;
+    padding:0 7px;
+    font-size:14px;
+    text-align:center;
+}
+.content .art li img{
+    width:120px;
+}
+.content .art .price{
+    font-weight:200;
+    font-size:14px;
+    color:#ba000c;
+}
