@@ -8,6 +8,45 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>할리스</title>
     <style>
+        .main-banner .container{
+            width:1920px;
+            height:480px;
+            margin:0 auto;
+            position:relative;
+        }
+        .main-banner .container .img-box{
+            position:absolute;
+            left:0;
+            top:0;
+            z-index:1;
+            opacity:0;
+        }
+        .main-banner .container .img-box:nth-child(1){
+            z-index:2;
+            opacity:1;
+        }
+        .main-banner .container .pagination{
+            position:absolute;
+            left:50%;
+            bottom:30px;
+            transform:translateX(-50%);
+            z-index:3;
+        }
+        .main-banner .container .pagination .circle{
+            float:left;
+            width:10px;
+            height:10px;
+            margin:0 5px;
+            border-radius:5px;
+            background:#999;
+            text-indent:-99999px;
+            cursor:pointer;
+        }
+        .main-banner .container .pagination .circle:nth-child(1),
+        .main-banner .container .pagination .circle:hover{
+            background:#ba000c;
+        }
+
         
     </style>
     </head>
@@ -108,9 +147,40 @@
                 </nav>
             </div>
         </header>
-        <section class="contents">
-            인덱스 페이지
+        <section class="sec main-banner">
+            <div class="container">
+                <div class="img-box">
+                    <a href="#"><img src="./images/main-banner01.jpg" alt="main-banner01"></a>
+                </div>
+                <div class="img-box">
+                    <a href="#"><img src="./images/main-banner02.jpg" alt="main-banner02"></a>
+                </div>
+                <div class="img-box">
+                    <a href="#"><img src="./images/main-banner03.jpg" alt="main-banner03"></a>
+                </div>
+                <div class="img-box">
+                    <a href="#"><img src="./images/main-banner04.jpg" alt="main-banner04"></a>
+                </div>
+                <div class="pagination clearfix">
+                    <div class="circle">1</div>
+                    <div class="circle">2</div>
+                    <div class="circle">3</div>
+                    <div class="circle">4</div>
+                </div>
+            </div>
         </section>
+        <section class="sec contents01">
+            <div class="container"></div>
+        </section>
+        <section class="sec contents02">
+            <div class="container"></div>
+        </section>
+        <section class="sec notice">
+            <div class="container"></div>
+        </section>
+        <section class="sec live">
+            <div class="container"></div>
+        </section>        
         <footer class="footer">
             <div class="container">
                 <div class="footer-nav">
