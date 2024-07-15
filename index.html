@@ -101,11 +101,17 @@
         .header .main-nav>li:hover{
             background:var(--primary);
             color:var(--gray04);
+        }  
+        .header .main-nav>li span:nth-child(2){
+            display:none;
+            font-weight:400;
+            font-size:12px;
+            position:relative;
+            top:-5px;
         }
-        
-        
-        
-        .header .main-nav span:nth-child(2),
+        .header .main-nav>li:hover span:nth-child(2){
+            display:block;
+        }
         .header .main-nav .sub-nav{
             display:none;
         }
