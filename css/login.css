@@ -1,0 +1,53 @@
+@charset 'utf-8';
+.form{
+    border-bottom:1px solid #ba000c;
+    padding-bottom:24px;
+}
+.form h4{
+    margin-bottom:24px;
+    font-weight:700;
+    font-size:64px;
+    color:#ba000c;
+    text-transform:uppercase;
+}
+.form p{
+    margin-bottom:36px;
+    font-size:18px;
+    line-height:27px;
+}
+.form>div{
+    width:540px;
+}
+.form .u-info{
+    float:left;
+    width:380px;
+}
+.form .btn-login{
+    float:right;
+    width:140px;
+}
+.u-info li{
+    margin-bottom:20px;
+}
+.u-info label{
+    float:left;
+    width:80px;
+    padding:6px 0;
+}
+.u-info input{
+    float:left;
+    width:300px;            
+    border:1px solid #ba000c;
+    padding:10px;
+}
+.btn-login input{
+    width:140px;
+    height:94px;
+    background:#ba000c;
+    border:none;
+    font-size:18px;
+    color:#eee;
+}
+.form .chk-box{
+    padding-left:80px;
+}
