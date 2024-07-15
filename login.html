@@ -4,12 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css"> 
+    <!-- CSS리셋 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 할리스 공통 스타일 -->
     <link rel="stylesheet" href="./css/style.css">
+    
     <title>할리스</title>
     <style>
-        
-
+        .contents .container{
+            width:940px;
+            margin:0 auto;
+            padding:48px 0 144px;
+        }
+        .contents .local-nav{
+            float:left;
+            width:190px;
+        }
+        .contents .content{
+            float:right;
+            width:700px;
+        }
+        .local-nav ol{
+            margin-bottom:48px;
+        }
+        .local-nav li{
+            margin-bottom:12px;
+            font-weight:700;
+            font-size:24px;
+        }
+        .local-nav li:nth-child(1){
+            color:#ba000c;
+        }
+        .local-nav h2{
+            margin-bottom:4px;
+            font-weight:700;
+            font-size:18px;
+        }
+        .local-nav p{
+            margin-bottom:36px;
+            font-weight:200;
+            font-size:14px;
+            line-height:21px;
+        }
+        .local-nav .img-box{
+            border-bottom:1px solid #ba000c;
+            padding-bottom:35px;
+        }
     </style>
     </head>
 <body>
@@ -110,8 +150,22 @@
             </div>
         </header>
         <section class="contents">
-            로그인 페이지
-        </section>
+            <div class="container clearfix">
+                <section class="sec local-nav">
+                    <ol>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">아이디찾기</a></li>
+                        <li><a href="#">비밀번호찾기</a></li>
+                    </ol>
+                    <h2><a href="#">Membership</a></h2>
+                    <p>할리스 멤버십 ‘CROWN’으로 다양한 혜택을 즐겨보세요</p>
+                    <div class="img-box"><a href="#"><img src="./images/img-local.jpg" alt="멤버십 바로가기"></a></div>
+                </section>
+                <section class="sec content">
+                    페이지 컨텐츠 영역
+                </section>
+            </div>
+        </section>        
         <footer class="footer">
             <div class="container">
                 <div class="footer-nav">
