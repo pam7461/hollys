@@ -5,116 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css"> 
+    <link rel="stylesheet" href="./css/style.css">
     <title>할리스</title>
     <style>
-        @font-face {
-            /* 등록되는 폰트 이름 */
-            font-family:'Noto Sans KR';
-            /* 등록할 폰트파일 */
-            src: url(./fonts/NotoSansKR-VariableFont_wght.ttf);
-        }
-        :root{
-            --primary:#d91438;
-            --sub01:#d94a64;
-            --sub02:#f2a7b5;
-            --gray01:#333;
-            --gray02:#666;
-            --gray03:#999;
-            --gray04:#eee;
-            font-family:'Noto Sans KR';
-            font-weight:400;
-            font-size:14px;
-            line-height:24px;
-            color:var(--gray01);
-        }
-        .wrapper{
-            overflow:hidden;
-        }
-        .header{
-            width:100%;            
-            border-bottom:1px solid var(--primary);
-        }
-        .header .container{
-            width:940px;
-            height:149px;
-            margin:0 auto;
-            padding-top:16px;
-            position:relative;
-        }
-        .header .logo{
-            position:absolute;
-            left:50%;
-            top:16px;
-            transform:translateX(-50%);            
-        }
-        .header .logo a{
-            display:block;
-            width:76px;
-            height:64px;
-            background:url(./images/logo.png) no-repeat center;
-            background-size:contain;
-            text-indent:-9999px;
-        }
-        .header h2{
-            display:none;
-        }
-        .header .q-nav01{
-            float:left;
-            font-weight:700;
-            margin-bottom:53px;
-        }
-        .header .q-nav01 li{
-            float:left;
-            margin-right:35px;
-        }
-        .header .q-nav01 li:nth-child(1) a{
-            display:block;
-            padding-left:22px;
-            background:url(./images/ico-header01.png) no-repeat left center;
-            background-size:16px;
-            color:var(--primary);
-        }
-        .header .q-nav01 li:nth-child(2) a{
-            display:block;
-            padding-left:22px;
-            background:url(./images/ico-header02.png) no-repeat left center;
-            background-size:16px;            
-        }
-        .header .q-nav02{
-            float:right;
-            font-size:12px;
-            color:var(--gray02);
-        }
-        .header .q-nav02 li{
-            float:left;
-            margin-left:20px;
-        }
-        .header .main-nav>li{
-            float:left;
-            width:156.6666px;
-            height:56px;
-            padding-top:14px;
-            font-weight:700;
-            font-size:18px;
-            text-align:center;
-        }
-        .header .main-nav>li:hover{
-            background:var(--primary);
-            color:var(--gray04);
-        }  
-        .header .main-nav>li span:nth-child(2){
-            display:none;
-            font-weight:400;
-            font-size:12px;
-            position:relative;
-            top:-5px;
-        }
-        .header .main-nav>li:hover span:nth-child(2){
-            display:block;
-        }
-        .header .main-nav .sub-nav{
-            display:none;
-        }
+        
 
     </style>
     </head>
@@ -215,7 +109,9 @@
                 </nav>
             </div>
         </header>
-        <section class="contents"></section>
+        <section class="contents">
+            인덱스 페이지
+        </section>
         <footer class="footer"></footer>
     </section>
 </body>
