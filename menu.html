@@ -13,9 +13,25 @@
     <!-- menu 스타일 -->
     <link rel="stylesheet" href="./css/menu.css">
     <title>할리스</title>
-    <style>
-        
-    </style>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(function(){
+            $('.local-nav a').click(function(event){
+                event.preventDefault();
+            })
+
+            let localNav = $('.local-nav li');
+
+            localNav.click(function(){
+                localNav.removeClass('active');
+                $(this).addClass('active');
+                let jsonName = $(this).attr('data-role');
+
+                
+            })
+
+        })
+    </script>
     </head>
 <body>
     <section class="wrapper">
@@ -118,14 +134,14 @@
             <div class="container clearfix">
                 <section class="sec local-nav">
                     <ol>
-                        <li class="active"><a href="#">커피</a></li>
-                        <li><a href="#">라떼·초콜릿·티</a></li>
-                        <li><a href="#">할리치노·빙수</a></li>
-                        <li><a href="#">스무디·주스</a></li>
-                        <li><a href="#">스파클링</a></li>
-                        <li><a href="#">푸드</a></li>
-                        <li><a href="#">MD상품</a></li>
-                        <li><a href="#">MD식품</a></li>
+                        <li data-role="data01" class="active"><a href="#">커피</a></li>
+                        <li data-role="data02"><a href="#">라떼·초콜릿·티</a></li>
+                        <li data-role="data03"><a href="#">할리치노·빙수</a></li>
+                        <li data-role="data04"><a href="#">스무디·주스</a></li>
+                        <li data-role="data05"><a href="#">스파클링</a></li>
+                        <li data-role="data06"><a href="#">푸드</a></li>
+                        <li data-role="data07"><a href="#">MD상품</a></li>
+                        <li data-role="data08"><a href="#">MD식품</a></li>
                     </ol>
                     <h2><a href="#">Membership</a></h2>
                     <p>할리스 멤버십 ‘CROWN’으로 다양한 혜택을 즐겨보세요</p>
