@@ -7,5 +7,7 @@ index와 login, mall, menu 페이지로 구성되어 있습니다.
 구성 요소(이미지....), 스크립트는 계속적으로 업데이트 예정입니다.  
 
 * * *  
-  
+
+## Style Guard  
+![스타일 가이드](https://pam7461.github.io/hollys/images/style-guide.jpg)  
 
