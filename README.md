@@ -1,6 +1,6 @@
 # [할리스 바로가기](https://pam7461.github.io/hollys/)  
 
-## ![hollys](https://pam7461.github.io/hollys/favicon.png) Hollys
+## ☕ Hollys
 HTML & CSS를 이용한 데스크탑용 웹 페이지  
 이 웹페이지는 UIUX를 학습하면서 제일먼저 제작한 페이지입니다.  
 index와 login, mall, menu 페이지로 구성되어 있습니다.  
@@ -8,6 +8,12 @@ index와 login, mall, menu 페이지로 구성되어 있습니다.
 
 * * *  
 
-## Style Guard  
+## 😎 Style Guard  
 ![스타일 가이드](https://pam7461.github.io/hollys/images/style-guide.jpg)  
 
+* * *  
+
+## INDEX
+![인덱스 페이지](https://pam7461.github.io/hollys/images/index.png)  
+
+* * *
